@@ -1,0 +1,301 @@
+/* CSS for whole Document*/
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Lato,sans-serif!important;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/* CSS for Header, normal Navbar and sliding Navbar */
+
+.nav-sliding{
+    background-color: rgba(200, 16, 46, 1);
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    width:100%;
+    transition: all 0.5s ease;
+  }   
+  
+  .nav-sliding-links{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-sliding-links li{
+    margin: 0 20px;
+  }
+  
+  .sliding-links {
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 8px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-size: 2vmin;
+    font-family: sans-serif;
+    line-height: 1,5;
+  }
+  
+  .nav-sliding a:hover {
+    background-color: gray;
+  }
+  .logo img {
+    height: 50px;
+  }
+
+  .search-box{
+    margin-right: 5px;
+    display: none;
+    transition: all 0,5 ease;
+    transform: translateY(-50%);
+  }
+  
+  .search-boxA{
+    transition: all 0,5 ease;
+    transform: translateY(-50%);
+    margin-right: 5px;
+  }
+  
+  .search-logo{
+    margin-right: 5px;
+  }
+  .search-logo i{
+    height: 15px;
+    font-size: 2em;
+    margin-right: 5px;;
+    cursor: pointer;
+  }
+
+/* Map */
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: black;
+  margin: 10px auto;
+  border-radius: 5px;
+  align-self: center;
+}
+
+  .introduction{
+    padding-top:103.2px ;
+    text-align: center;
+  }
+
+  #map {
+    margin-top: 50px; 
+    height: 500px; 
+  }
+
+.search{
+  text-align: center;
+}
+
+.search button {
+    background-color: rgba(200, 16, 46, 1);
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 10px;
+}
+
+.search button:hover {
+  background-color: grey;
+}
+
+ .search input {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: black;
+  }
+
+/* CSS for footer */
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    margin-top: 100px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 5px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #999;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #f00;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #d00;
+  }
+  .copyright{
+    text-align: center;
+    color:#999;
+  }
+
+  /* Mobile Elements
+This part is about elements which are only visible if the user is using a screen with less than 850px 
+*/
+
+.menu-button{
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: none;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .menu-buttonline{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  /* Mobile CSS
+This is the CSS for parts that have to be changed when using a smaller screen or elements that only appear when u use a device with a smaller screen.
+*/
+
+@media only screen and (max-width:850px){
+  
+    /* Responsive Header and navbar  */
+    
+    .nav-sliding{
+      padding: 0;
+      background-color: rgba(200, 16, 46, 1);
+      color: rgba(200, 16, 46, 1);
+      height:104px;
+    }
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  
+    .nav-sliding-links{
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      background-color: black;
+      margin:0;
+      margin-top: -900px;
+      transition: all 0.5s ease;
+    }
+    
+    .sliding-links{
+        background-color: rgba(200, 16, 46, 1);
+        color: whitesmoke;
+    }
+
+    .mobile-menu{
+      margin-top: 0px;
+      border-bottom-right-radius: 30%;
+    }
+  
+    .menu-button{
+    display: block;
+    }
+    .search-box {
+      display: none;
+    }
+
+    #searchbox , #searchlogo{
+        display: none;
+    }
+
+    .nav-sliding-links li {
+      margin: 30px auto;
+    }
+}
+
+/* Animations */
+
+img {
+    transition: transform 0.3 ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  a:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+  }

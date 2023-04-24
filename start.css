@@ -1,0 +1,460 @@
+/* CSS for whole Document*/
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Lato,sans-serif!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* CSS for Header, normal Navbar and sliding Navbar */
+
+header {
+  background-image:url('./img/All\ of\ the\ Recipes\ You\ Need\ for\ a\ Celebratory\ Post-Fasting\ Feast.jpg');
+  background-color: rgba(255, 255, 255, 0.8);
+  background-position: bottom;
+  background-size:cover;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+}
+.first-screen{
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 150px;
+  background-color: rgba(200, 16, 46, 0.5);
+  border-radius: 40px;
+  height: 350px;
+  width: 80%;
+}
+.first-screen h2 {
+  font-size: 4vim;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: black;
+  margin: 10px auto;
+  border-radius: 5px;
+  align-self: center;
+}
+.first-screen img {
+  height: 50px;
+}
+
+.first-screen h1{
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.turkish-button{
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius:40px;
+  margin-top: -2px,
+}
+
+.first-screen a {
+  background-color: whitesmoke;
+  color:black;
+}
+
+.first-screen a:hover{
+  background-color:gray ;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-sliding{
+  background-color: rgba(200, 16, 46, 1);
+  position: fixed;
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+  top: -200px;
+  width:100%;
+  transition: all 0.5s ease;
+}
+
+.nav-sliding-links{
+  display: flex;
+  align-items: center;
+}
+
+.nav-sliding-links li{
+  margin: 0 20px;
+}
+
+.sliding-links {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 8px 15px;
+  color: black;
+}
+
+.nav-sliding a:hover {
+  background-color: gray;
+}
+
+.navbar{
+  display: flex;
+  position:absolute;
+  width:100%;
+  justify-content: space-between;
+  top: 0;
+  left:0;
+  padding:20px;
+  color: rgba(200, 16, 46, 1);
+}
+
+.navbar-links {
+  display:flex;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin: 0 20px ;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/*nav ul li:last-child {
+  margin-right: 10px;
+}*/
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  font-size: 2vmin;
+  font-family: sans-serif;
+  line-height: 1,5;
+}
+
+.links{
+  background-color:rgba(200, 16, 46, 1);
+  border-radius: 30px;
+  padding: 8px 15px;
+}
+
+nav ul li a:hover {
+  background-color: gray;
+}
+
+.search-box{
+  margin-right: 5px;
+  display: none;
+  transition: all 0,5 ease;
+  transform: translateY(-50%);
+}
+
+.search-boxA{
+  transition: all 0,5 ease;
+  transform: translateY(-50%);
+  margin-right: 5px;
+}
+
+.search-logo{
+  margin-right: 5px;
+}
+.search-logo i{
+  height: 15px;
+  font-size: 2em;
+  margin-right: 5px;;
+  cursor: pointer;
+}
+
+/* CSS for Meal introduction section */
+
+.meals{
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+  display: block;
+}
+
+.titel{
+  text-align: center;
+  font-size: 4vmin;
+  color:rgba(200, 16, 46, 1);
+}
+
+.col{
+  display: block;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.col a {
+  background-color: rgba(200, 16, 46, 1);
+  color: whitesmoke;
+}
+
+.col a:hover {
+  background-color: gray;
+}
+
+.col img {
+  height:500px;
+  max-width: 100%;
+  border-radius: 50%;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border: 3px solid #ddd;
+}
+.meals {
+  margin-top: 50px;
+}
+
+h4{
+  font-size: 3vmin;
+  color: black;
+  margin: 20px auto;
+}
+.col p {
+  color: black;
+  padding: 0 40px;
+}
+
+/* CSS for Turkish History section */
+
+.turkish-culture {
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/Istanbul\,\ Turkey\ at\ Dusk.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+}
+
+.culture-content {
+  width: 50%;
+  padding: 50px;
+  color: rgba(200, 16, 46, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.culture-content h1 {
+  font-size: 7vmin;
+}
+
+.culture-content .line {
+  margin-bottom: 50px;
+}
+
+.culture-content p {
+  color: rgba(200, 16, 46, 1);
+}
+
+.culture-content a {
+  margin-top: 40px;
+  background-color: rgba(200, 16, 46, 1);
+  color: black;
+}
+
+.culture-content a:hover{
+  background-color: gray;
+}
+
+/* CSS for footer */
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 5px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #999;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #f00;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #d00;
+}
+.copyright{
+  text-align: center;
+  color:#999;
+}
+
+/* Mobile Elements
+This part is about elements which are only visible if the user is using a screen with less than 850px 
+*/
+
+.menu-button{
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  display: none;
+  width: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.menu-buttonline{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+
+/* Mobile CSS
+This is the CSS for parts that have to be changed when using a smaller screen or elements that only appear when u use a device with a smaller screen.
+*/
+
+@media only screen and (max-width:850px){
+  
+  /* Responsive Header and navbar  */
+  
+  .navbar{
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-sliding{
+    display: none;
+  }
+
+  .navbar-links{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    margin:0;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu{
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+
+  .menu-button{
+  display: block;
+  }
+  .search-box {
+    display: none;
+  }
+  .navbar-links li {
+    margin: 30px auto;
+  }
+
+  /* Responsive Meal options */
+
+  .col img {
+    max-width: 90%;
+  }
+
+  /* About Turkey section */
+  
+  .culture-content{
+    width:100%;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Animations */
+
+img {
+  transition: transform 0.3 ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+a:hover{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+}
+

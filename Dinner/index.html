@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dinner</title>
+        <!-- === CSS ===-->
+        <link rel="stylesheet" href="dinner.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <nav id="nav-sliding"class="nav-sliding">
+            <div class="logo">
+                 <a href="../index.html"><img src="../cooking.png" alt="Logo"></a>
+             </div>  
+             <ul class="nav-sliding-links">
+                <li><a class="sliding-links" href="../Breakfast/index.html">Breakfast</a></li>
+                <li><a class="sliding-links" href="../Lunch/index.html">Lunch</a></li>
+                <li><a class="sliding-links" href="../Dinner/index.html">Dinner</a></li>
+                <li><a class="sliding-links" href="../History/index.html">About Turkey</a></li>
+                <li><a class="sliding-links" href="../TryTurkishFood.html">TryTurkishFood</a></li>
+                 <li><div  id="searchlogo"class="search-logo"><i class="fa fa-search"></i></div>
+                     <div id="searchbox" class="search-box"><input type="text" placeholder="Search..."></li>
+            </ul>
+            <div id="menu-button"class="menu-button">
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+            </div>
+            <script>
+                const menuBTN = document.querySelector('.menu-button');
+                const navbarlinks = document.querySelector('.nav-sliding-links');
+
+                menuBTN.addEventListener('click',()=>{
+                    navbarlinks.classList.toggle('mobile-menu');
+                })
+                const searchlogo = document.getElementById("searchlogo");
+                const searchbox = document.createElement("div");
+
+                searchlogo.addEventListener("click", function() {
+                searchbox.innerHTML = document.getElementById("searchbox").innerHTML;
+                searchbox.classList.add("search-boxA");
+                searchbox.id = "searchbox";
+
+                searchbox.classList.add(".search-boxA");
+
+                searchlogo.replaceWith(searchbox);
+                });
+            </script>
+         </nav>
+         <section class="dinner-header">
+            <div class="dinner-image">
+                <img src="../img/SOFRA.jpg" alt="Turkish Dinner">
+            </div>
+            <div class="titel">
+                <h1>Turkish Dinner</h1>
+                <div class="line"></div>
+                <h2>Coming Together with the family</h2>
+                <p>Turkish Dinner is the Coming together of the whole family to share a meal together.
+                    It usually starts with mezze and the main course is mostla a grilled meat dish.  </p>
+            </div>
+         </section>
+         <section class="meals">
+            <div class="meals-options">
+                <h1>Dishes and drinks at Turkish dinner</h2>
+            </div>
+            <div class="popup-div">
+                <ul>
+                    <li id="Adana-Kebap" class="link" data-img="img/Ahmet Durmuş.jpg"
+                    data-info=" 
+                    Adana kebap is a popular kebap dish which is named after the city of Adana in Turkey.
+                    It is known for its spicy flavor although the spicesness can be changed.
+                    It is considered to be one of the most famous kebaps in Turkey and all over the world.
+
+                    Ingredients:
+
+                    For the Kebabs:
+                    -   500 grams (about 1 pound 2 ounces) ground lamb
+                    -   salt
+                    -   2 teaspoons ground cumin, divided
+                    -   2 tablespoons ground sumac, divided
+                    -   2 tablespoons ground Urfa pepper flakes, divided
+                    -   2 tablespoons ice-cold water
+
+                    For Serving:
+                    -   1 red onion, thinly sliced
+                    -   6 pieces lavash or pita
+                    -   1 cup picked fresh parsley leaves
+                    -   2 medium tomatoes, thinly sliced
+                    -   Pickled sport peppers or pepperoncini
+
+                    Instructions:
+
+                    1.  Combine lamb with 7.5 grams (about 2 teaspoons) kosher salt, 1 teaspoon cumin, 2 teaspoons sumac, and 1 tablespoon pepper flakes. Knead by hand or in a stand mixer fitted with a paddle attachment until mixture turns tacky and starts sticking to the side of the bowl. Add water and continue kneading until incorporated. Place in refrigerator and chill well.
+                    2.  Meanwhile, combine remaining teaspoon cumin, 2 teaspoons sumac, remaining tablespoon pepper flakes, and 2 teaspoons salt in a small bowl. Set spice mixture aside. Combine remaining 2 teaspoons sumac and red onions in a medium bowl. Season with salt to taste and set aside.
+                    3.  Using wet hands, divide lamb mixture into 12 even balls. Using wet hands, form each ball into a long, flat kebab around a skewer.
+                    4.  Light one chimney full of charcoal. When all the charcoal is lit and covered with gray ash, pour out and arrange the coals on one side of the charcoal grate. Set cooking grate in place, cover grill and allow to preheat for 5 minutes. Alternatively, set half the burners on a gas grill to the highest heat setting, cover, and preheat for 10 minutes. Clean and oil the grilling grate. Place kebabs directly over hot side of grill, cover, and cook, turning occasionally and sprinkling with spice mixture until well charred on both sides and kebabs are cooked through, about 12 minutes total.
+                    5.  During last few minutes of cooking, place bread directly on top of kebabs in batches until heated through.
+                    6.  Serve kebabs with warm bread, sumac onions, parsley, tomatoes, and pickled peppers.
+                    ">
+
+                        <h1>Adana kebap</h1>
+                        <img src="img/Ahmet Durmuş.jpg" alt="Adana kebap picture">
+                    </li>
+                    <li id="Döner-Kebap" class="link" data-img="img/Turkish Doner Kebab stock image_ Image of kebap, street - 4043723.jpg" data-info="
+                    
+                        Döner Kebap is a popular turkish food which is popular across the whole world. It is increasingly popular in Europe and other parts of the world, where it sold as a street food.
+
+                        Ingredients:
+                        -   500g lamb mince
+                        -   1 small onion, coarsely grated
+                        -   4 garlic cloves, minced or finely grated
+                        -   100g fresh breadcrumbs
+                        -   2 tsp ground cumin
+                        -   2 tsp ground coriander
+                        -   1 tsp dried oregano
+                        -   ¼ tsp smoked paprika
+                        -   sunflower oil for oiling
+
+                        To Serve:
+                        pitta breads, shredded red or white cabbage, sliced onion, chopped tomatoes, pickled chillies, chilli sauce (see recipe below), garlic sauce (see recipe below), tahini
+
+                        Instructions:
+                        1.  Heat the oven to 200C/180C fan/gas 6. Tip all the ingredients except the oil into a food processor with a large pinch of salt and lots of ground pepper. Pulse until everything is combined and chopped together. You can also just squish everything together in a bowl but this will give you a looser finish.
+                        2.  Oil a large sheet of foil, tip the meat mix in the middle and mould to a very thick sausage, roughly the shape of an aubergine. Roll up the foil tightly, twisting up the ends to create a Christmas cracker shape.
+                        3.  Lay on a shallow roasting tin and roast in the oven for 35-40 mins, turning occasionally, or until a digital cooking thermometer reads 75C when pierced in the middle. Leave the kebab to cool a little, then unwrap the foil. Place back on the tray and brown under the grill or with a blowtorch.
+                        4.  Place on a board and carve into thin slices. For full doner mode, you can hold the kebab up with a roasting fork or metal skewer and carve. Serve with warm pitta bread and any of the other accompaniments, including our chilli sauce and garlic yogurt sauce.
+                    ">
+                        <h1>Döner Kebap</h1>
+                        <img src="img/Turkish Doner Kebab stock image_ Image of kebap, street - 4043723.jpg" alt="Döner Kebap picture">
+                    </li>
+                    <li id="Manti" class="link" data-img="img/Türkische Manti - Kochhochgenuss.jpg" data-info="
+                    Manti is a traditonal turkish dish. It consists of small dumplings filled with beef or lamb and served with a sauce and toppings.
+                    It is typically served with melted butter and dired mint, as well as Aleppo pepper, a spicy and flavorful Turkish pepper.
+                    The different regions in Turkey have their own version of manti. It is often served at special occasions.
+
+                    Ingredients:
+
+                    For the Dough:
+                    -   2 cups all-purpose flour, plus more for dusting
+                    -   ½ teaspoon salt
+                    -   2 large eggs
+                    -   ½ teaspoon water, or as needed
+                    
+                    Filling:
+                    -   2 onions, peeled
+                    -   ½ pound ground beef
+                    -   salt and pepper to taste
+
+                    Red Pepper Oil:
+                    -   3 tablespoons vegetable oil
+                    -   1 tablespoon red pepper flakes
+                    
+                    Yogurt Sauce:
+                    -   1 (8 ounce) container plain yogurt
+                    -   1 tablespoon minced garlic
+
+                    Instructions:
+                    1.  Combine flour and salt in a large bowl. Add eggs and water, mixing well with your hands. Add more water, if needed, to form a soft dough. Cover and set aside for at least 30 minutes.
+                    2.  Shred onions and place them in a colander or sieve set over a bowl; drain and discard juice. Combine drained onion, ground beef, salt, and pepper in a medium bowl; mix well with a spoon until mashed. Set filling aside.
+                    3.  Lightly flour a work surface and a large plate.
+                    4.  Divide dough in half. Working with one piece at a time, roll dough on the floured surface into a rectangle as thin as possible. Cut into 2-inch squares using a knife or pastry wheel.
+                    5.  Place about 2 teaspoons filling in the center of each square. Gather the edges of dough and pinch them together at the top to form a bundle. Transfer manti to the prepared plate; sprinkle more flour on top to prevent sticking.
+                    6.  Heat oil and red pepper flakes in a small skillet over low heat just until pepper flakes begin to color oil. Remove from heat and keep warm.
+                    7.  Stir together yogurt and garlic in a small bowl; set aside.
+                    8.  Bring a large pot of salted water to a boil over medium-high heat. Cook manti in boiling water until filling is no longer pink and dough is tender, 20 to 25 minutes. Drain well.
+                    9.  Divide manti onto 4 plates. Spoon yogurt sauce over manti and drizzle with pepper oil.
+
+                    Enjoy your delicious Manti.
+
+                    ">
+                        <h1>Manti</h1>
+                        <img src="img/Türkische Manti - Kochhochgenuss.jpg" alt="Turkish Manti picture">
+                    </li>
+                    <li id="Sac-Tava" class="link" data-img="img/Sac Kavurma Tarifi – Ana Yemek Tarifleri - Nefis Yemek Tarifleri.jpg" data-info="
+                        Sac Tava is a traditional turkish  which is similar to a stir fry but it is cooked on a special pot called sac.
+                        The sac is heated over an open flame. It is popular in Turkey and usually served on special occasions.
+
+                        Ingredients:
+                        -   1 kg lamb meat,
+                        -   1 onion, finely chopped,
+                        -   4 green peppers, finely chopped,
+                        -   3 tomatoes, finely chopped,
+                        -   1/4 cup of vegetable oil,
+                        -   Salt,
+                        -   Pepper,
+                        -   Cumin.
+
+                        Instructions:
+                        1.  Chop the lamb meat finely,
+                        2.  In a large pan, heat oil and add the meat, stirring constantly, cook until brownish,
+                        3.  Add the onion and stir fry until softens, stirring constantly,
+                        4.  Add the peppers and stir fry for a few more minutes,
+                        5.  Add and mix the tomatoes,
+                        6.  Cover the lid and cook for 15-20 minutes.,
+                        7.  Add salt, pepper and cumin, mix and remove from heat.
+                    ">
+                        <h1>Sac Tava</h1>
+                        <img src="img/Sac Kavurma Tarifi – Ana Yemek Tarifleri - Nefis Yemek Tarifleri.jpg" alt="Sac-Tava picture">
+                    </li>
+                    <li id="Köfte" class="link" data-img="img/Anne Köftesi Tarifi - Hayat Cafe Kolay Yemek Tarifleri.jpg" data-info="
+                    Köfte is a traditional dish in turkey that consists of small grilled meatballs made from ground beef or lamb with spices.
+                    It servers as a main course in Turkey.
+
+                    Ingredients:
+                    -   500g of ground beef / lamb,
+                    -   1 onion,
+                    -   1 egg,
+                    -   2 tablespoons of bread crumbs,
+                    -   1 teaspoon of black pepper,
+                    -   2 teaspoons of cumin,
+                    -   1 handful of chopped parsley,
+                    -   Salt,
+                    -   Vegetable oil.
+
+                    Instructions:
+                    1.  Add the grated onion, egg, bread crumbs, parsley, salt and spices into the ground meat and stir well with your hands until you get a homogeneous mixture,
+                    2.  Make round patties out of the mixture and press with your palm to flatten them,
+                    3.  Heat vegetable oil in a large pan,
+                    4.  Shallow-fry the patties on both sides.
+                    ">
+                        <h1>Köfte</h1>
+                        <img src="img/Anne Köftesi Tarifi - Hayat Cafe Kolay Yemek Tarifleri.jpg" alt="Turkish köfte picture">
+                    </li>
+                    <li id="Raki" class="link" data-img="img/Boğazda Alkol Fake Story.jpg" data-info="
+                    Raki is a alcoholic drink which is especialy popular in Turkey. It is made by distilling grapes and or raisins and then flavoring the resulting alcohol with anise.
+                    Raki is usually clear clear and color and it turn milky when water is added to it.It has a alcohol content of 40% to 50%. It it mostly drank as a mixture of Raki and water and enjoyed over the course of a meal.
+                    The consumption of Raki is a social ritual in Turkey and is regarded as a symbol of hospitality and friendship.
+                    ">
+                        <h1>Raki</h1>
+                        <img src="img/Boğazda Alkol Fake Story.jpg" alt="Turkish Raki picture">
+                </ul>
+            </div>
+            <div id="popup1" class="popup">
+                <span class="close">&times;</span>
+                <h1 id="popup-food"></h1>
+                <div class="line"></div>
+                <img id="popup-image" src="" alt="">
+                <p id="popup-info"></p>
+            </div>
+        
+        <script>
+            // Get the popup element
+            const popup = document.getElementById("popup1");
+
+            // Get the <span> element that closes the popup
+            const closeBtn = document.querySelector(".close");
+
+            // Get all the food items and add a click event listener to each
+            const foods = document.querySelectorAll(".popup-div li");
+            foods.forEach((food) => {
+            food.addEventListener("click", () => {
+                // Get the food name and display it in the popup
+                const foodName = food.innerText;
+                const popupFood = document.getElementById("popup-food");
+                popupFood.innerText = foodName;
+
+                const imgPath = food.getAttribute("data-img");
+                const popupImg = document.getElementById("popup-image");
+                popupImg.src = imgPath;
+                
+                const foodInfo = food.getAttribute("data-info");
+                const popupInfo = document.getElementById("popup-info");
+                popupInfo.innerText = foodInfo;
+
+                // Display the popup
+                popup.style.display = "block";
+            });
+            });
+
+            // When the user clicks on the <span> (x), close the popup
+            closeBtn.addEventListener("click", () => {
+
+                const popupImg = document.getElementById("popup-image");
+                popupImg.src = "";
+                const popupInfo = document.getElementById("popup-info");
+                popupInfo.innerText = "";
+                popup.style.display = "none";
+            });
+        </script>
+
+         </section>
+
+
+         </section>
+         
+        <!-- Footer 
+        This section is about the footer in which a feedback form is provided and social media links.
+        -->
+
+        <footer>
+            <div class="container">
+                <h2>Feedback</h2>
+                <p>Feel free to reach out if you have any Feedback or questions about the website.</p>
+                <form id="feedback-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Feedback</button>
+                  </form>
+                <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2023 Emre Cinar</p>
+              </div>
+        </footer>
+    </body>
+</html>

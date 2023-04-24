@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flavors of Turkey</title>
+        <!-- === CSS ===-->
+        <link rel="stylesheet" href="start.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+    <!-- Header, normal Navbar and sliding Navbar
+    This part is about the header and the navbars including the JS for it.
+    -->
+        <nav id="nav-sliding"class="nav-sliding">
+           <div class="logo">
+                <a href="index.html"><img src="cooking.png" alt="Logo"></a>
+            </div>  
+            <ul class="nav-sliding-links">
+                <li><a class="sliding-links" href="Breakfast/index.html">Breakfast</a></li>
+                <li><a class="sliding-links" href="Lunch/index.html">Lunch</a></li>
+                <li><a class="sliding-links" href="Dinner/index.html">Dinner</a></li>
+                <li><a class="sliding-links" href="History/index.html">About Turkey</a></li>
+                <li><a class="sliding-links" href="TryTurkishFood.html">TryTurkishFood</a></li>
+                <li><div  id="searchlogo"class="search-logo"><i class="fa fa-search"></i></div>
+                    <div id="searchbox" class="search-box"><input type="text" placeholder="Search..."></li>
+        </nav>
+        <script>
+
+            if(window.innerWidth >= 851){
+            window.onscroll = function() {scrollFunction()};
+            }
+            function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("nav-sliding").style.top = "0";
+                document.getElementById("navbar").style.top = "-100px";
+            } else {
+                document.getElementById("nav-sliding").style.top = "-200px";
+                document.getElementById("navbar").style.top = "0";
+            }}
+        </script>
+        <nav id="navbar" class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="cooking.png" alt="Logo"></a>
+            </div>  
+            <ul class="navbar-links">
+                <li><a class="links" href="Breakfast/index.html">Breakfast</a></li>
+                <li><a class="links" href="Lunch/index.html">Lunch</a></li>
+                <li><a class="links" href="Dinner/index.html">Dinner</a></li>
+                <li><a class="links" href="History/index.html">About Turkey</a></li>
+                <li><a class="links" href="TryTurkishFood.html">TryTurkishFood</a></li>
+            </ul>
+
+            <div id="menu-button"class="menu-button">
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+            </div>
+
+            <!-- not finished yet-->
+            <script>
+              if(window.innerWidth <=850){
+                window.onscroll = function() {scrollbuttonfunction()}
+              }
+              function scrollbuttonfunction() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    document.getElementById("navbar").style.position("fixed")
+                    console.log("test")
+                    document.getElementById("navbar").style.backgroundColor("rgba(200, 16, 46, 1)")
+                }
+              }
+            </script>
+            <!-- Not finished yet-->
+
+
+            <script>
+                const menuBTN = document.querySelector('.menu-button');
+                const navbarlinks = document.querySelector('.navbar-links');
+
+                menuBTN.addEventListener('click',()=>{
+                    navbarlinks.classList.toggle('mobile-menu');
+                })
+                const searchlogo = document.getElementById("searchlogo");
+                const searchbox = document.createElement("div");
+
+                searchlogo.addEventListener("click", function() {
+                searchbox.innerHTML = document.getElementById("searchbox").innerHTML;
+                searchbox.classList.add("search-boxA");
+                searchbox.id = "searchbox";
+
+                searchbox.classList.add(".search-boxA");
+
+                searchlogo.replaceWith(searchbox);
+                });
+            </script>
+        </nav>
+        
+        <header>
+            <div class="first-screen">
+                <h2>Flavour of Turkey</h2>
+                <div class="line"></div>
+                <img src="img/Turkey-flag-icon-on-transparent-background-PNG.png" alt="Turkish flag icon">
+                <h1>Experience Delicious Turkish Cuisine</h3>
+                <a href="TryTurkishFood.html" class="turkish-button">Try it</a>
+        </header>
+
+        <!-- Meal options 
+        This section is about the different meal times and gives a first introduction about each of them
+        -->
+        <section class="meals">
+            <div class="titel">   
+                <h1>Turkish meals</h1>
+                <div class="line"></div>
+            </div>
+            <div class="col">
+                <img src="img/Traditional Turkish Breakfast Foods.jpg" alt="Turkish breakfast">
+                <h4>Turkish Breakfast</h4>
+                <div class="line"></div>
+                <p>Turkish breakfast or kahvalti in turkish is a essential part of turkish culture. Turkish families will often get together at one table on weekends to have breakfast.
+                    The concept of sharing a meal is one of the main cultural aspects of turkish culture. Turkish culture emphasizes the importance of hospitality and generosity.</p>
+                <a href="Breakfast/index.html" class="turkish-button">Learn more</a>
+            </div>
+            <div class="col">
+                <img src="img/15 Things to Eat and Drink in Turkey.jpg" alt="Turkish lunch">
+                <h4>Turkish Lunch</h4>
+                <div class="line"></div>
+                <p>Turkish lunch is an essential part of Turkish culture and tradition. The act of coming together and connecting with friends, family and colleagues is an important part of turkish lunch.</p>
+                <a href="Lunch/index.html" class="turkish-button">Learn more</a>
+            </div>
+            <div class="col">
+                <img src="img/SOFRA.jpg" alt="Turkish dinner">
+                <h4>Turkish Dinner</h4>     
+                <div class="line"></div>
+                <p>Turkish Dinner is the Coming together of the whole family to share a meal together.
+                    It usually starts with mezze and the main course is mostla a grilled meat dish.</p>
+                <a href="Dinner/index.html" class="turkish-button">Learn more</a>
+            </div>
+        </section>
+        <section class="turkish-culture">
+            <div class="culture-content">
+                <h1>About Turkish culture</h1>
+                <div class="line"></div>
+                <p>Turkey is country with long history and empires dating back 4000 years ago. The course of time and events introduced Turkey to a wide range of people and cultures.
+                    Therefore the country has a rich culture of unique traditions and customs. It is located in both Europe and Asia which enforeces the rich culture even more.</p>
+                <a href="" class="turkish-button"> Learn more</a>
+            </div>
+        </section>
+
+
+        <!-- Footer 
+        This section is about the footer in which a feedback form is provided and social media links.
+        -->
+
+        <footer>
+            <div class="container">
+                <h2>Feedback</h2>
+                <p>Feel free to reach out if you have any Feedback or questions about the website.</p>
+                <form id="feedback-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Feedback</button>
+                  </form>
+                <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2023 Emre Cinar</p>
+              </div>
+        </footer>
+    </body>
+</html>

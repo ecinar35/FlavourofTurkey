@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lunch</title>
+        <!-- === CSS ===-->
+        <link rel="stylesheet" href="lunch.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <!-- Navbar-->
+        <nav id="nav-sliding"class="nav-sliding">
+            <div class="logo">
+                 <a href="../index.html"><img src="../cooking.png" alt="Logo"></a>
+             </div>  
+             <ul class="nav-sliding-links">
+                 <li><a class="sliding-links" href="../Breakfast/index.html">Breakfast</a></li>
+                 <li><a class="sliding-links" href="../Lunch/index.html">Lunch</a></li>
+                 <li><a class="sliding-links" href="../Dinner/index.html">Dinner</a></li>
+                 <li><a class="sliding-links" href="../History/index.html">About Turkey</a></li>
+                 <li><a class="sliding-links" href="../TryTurkishFood.html">TryTurkishFood</a></li>
+                 <li><div  id="searchlogo"class="search-logo"><i class="fa fa-search"></i></div>
+                     <div id="searchbox" class="search-box"><input type="text" placeholder="Search..."></li>
+            </ul>
+            <div id="menu-button"class="menu-button">
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+            </div>
+            <script>
+                const menuBTN = document.querySelector('.menu-button');
+                const navbarlinks = document.querySelector('.nav-sliding-links');
+
+                menuBTN.addEventListener('click',()=>{
+                    navbarlinks.classList.toggle('mobile-menu');
+                })
+                const searchlogo = document.getElementById("searchlogo");
+                const searchbox = document.createElement("div");
+
+                searchlogo.addEventListener("click", function() {
+                searchbox.innerHTML = document.getElementById("searchbox").innerHTML;
+                searchbox.classList.add("search-boxA");
+                searchbox.id = "searchbox";
+
+                searchbox.classList.add(".search-boxA");
+
+                searchlogo.replaceWith(searchbox);
+                });
+            </script>
+         </nav>
+         <section class="lunch-header">
+            <div class="lunch-image">
+                <img src="../img/15 Things to Eat and Drink in Turkey.jpg" alt="Turkish lunch">
+            </div>
+            <div class="titel">
+                <h1>Turkish Lunch</h1>
+                <div class="line"></div>
+                <h2></h2>
+                <p>Turkish lunch is an essential part of Turkish culture and tradition. The act of coming together and connecting with friends, family and colleagues is an important part of turkish lunch.
+                     </p>
+            </div>
+         </section>
+         <!-- Section for the Meals -->
+         <section class="meals">
+            <div class="meals-options">
+                <h1>Turkish Lunch  Options for a Nourishing Meal</h2>
+            </div>
+            <div class="popup-div">
+                <ul>
+                    <li id="Mezze" class="link" data-img="img/Turkish mezze platter.jpg"
+                    data-info="
+                    Mezze is a style of dining in the Mediterraneaen and the Middle East. It includes a combination of cold and hot foods including vegetables, meat, dips, and breads.
+                    Mezze often is compared to Spanish tapas but they aren't eaten the same way. Spanish tapas are meant to inspire the appetite and are eaten often as bar food before the main meal. Mezze on the other hand is the meal.
+
+                    As there are lots of mezzes, the recipe for one which is called havuc tarator (Carrot yogurt dip).
+
+                    Ingredients:
+                    -   3 medium carrots
+                    -   1 clove of garlic
+                    -   3 walnuts
+                    -   4 tbsp olive oil
+                    -   5 tbsp yogurt
+                    -   salt 
+
+                    Instructions:
+                    1.  Grate the carrots and garlic cloves and chop the walnuts
+                    2.  Heat the olive oil in a large pan and add the carrots and garlic and cook it for 5 minutes until the carrots soften.
+                    3.  In another bowl whip the yoghurt with salt
+                    4.  Add the pan content and mix well 
+                    5. Transfer to serving plat and drizzle with olive oil
+                    ">
+                        <h1>Mezze</h1>
+                        <img src="img/Turkish mezze platter.jpg" alt="Turkish Mezze">
+                    </li>
+                    <li id="Mercimek Corba" class="link" data-img="img/Turkish delicious food, Mercimek Corba (lentil soup), Istanbul, Turkey.jpg" data-info="
+                    Turkish red lentil soup, also known as mercimek corbasi is one of the most popular soups in turkish cousine and the whole world. It is a simple dish that is eaten during all meal times.
+
+                    Ingredients:
+                    -   3 tablespoons olive oil
+                    -   1 large finely diced onion
+                    -   1 finely diced celery rip 
+                    -   4 cloves garlic minced
+                    -   1 teaspoons ground cumin
+                    -   1 teaspoons dried oregano
+                    -   2 tablespoons of biber salcasi (Turkish sweet pepper paste)
+                    -   1,5 cups of dried red lentils
+                    -   2 liters of vegetable stock
+                    -   1-2 lemons to taste
+                    -   salt 
+
+                    Instructions:
+                    1.  Heat the olive oil in a large pot over medium heat and add the onion and cook them for 3 minutes. Add the celery, carrot, garlic and cook them until the vegetables soften.
+                    2.  Add the cumin and oregano and stir it throughly. Add the biber salcasi and stir till it is evenly distributed.
+                    3.  Add the lentils and the vegetable stock and turn the heat ot low. Let it simmer for about 20 mins until the lentils and vegetables are tender. Close the lid.
+                    4.  Remove the soup from the heat and use a blender to puree the soup. Add lemon juice, salt or pepper to taste.
+
+                    Enjoy your mercimek soup. 
+
+                    ">
+                        <h1>Mercimek Corba</h1>
+                        <img src="img/Turkish delicious food, Mercimek Corba (lentil soup), Istanbul, Turkey.jpg" alt="Mercimek Corba">
+                    </li>
+                    <li id="Lahmacun" class="link" data-img="img/Lahmacun Recipe (Turkish Pizza) - Give Recipe.jpg" data-info="
+                    Lahmacun is a turkish flatbread which is often called Turkish pizza. It is popular street food in turkey and eaten as a light snack.
+                    It can be eaten witha avariety of different topics.
+
+                    Ingredients:
+                    
+                    For the dough:
+
+                    -   500g white bread flour
+                    -   7g yeast
+                    -   cornmeal for dusting
+
+                    For the topping:
+
+                    -   2 tomatoes
+                    -   2 green chilies
+                    -   4 finely chopped spring onions
+                    -   finely chopped leaf parsley
+                    -   250g beef mince
+                    -   2 tsp Aleppo chilli pepper flakes
+                    -   pinch of ground cumin
+                    -   2 tbsp olive oil
+                    -   1/2 lemon
+                    -   1 medium finely sliced onion
+
+                    Instructions:
+                    1.  Sift the flour into a large bowl, make a well in the middle and sprinkle in the yeast. Pour 125ml water over the yeast, then flick flour over the liquid to create a layer. Cover and leave to rise in a warm place for 15 mins until cracks appear on the surface of that layer.
+                    2.  Use your hands to mix in 250ml more water along with 1 tsp salt and knead the dough for about 10 mins until elastic and no longer sticky. Add a little more flour if you need to. Cover and leave to rise again in a warm place for 30 mins until doubled in size.
+                    3.  Heat the oven to as high as it will go (about 240C/220C fan/gas 9) and sprinkle one or two baking trays thinly with cornmeal.
+                    4.  Pour boiling water from the kettle over the tomatoes, leave to stand briefly, then drain and slip off the skins. Cut the tomatoes in half, cut out the stalks, scoop out the seeds and discard, then chop the flesh.
+                    5.  Halve the chillies lengthways, cut out the stalks, seeds and white inner membrane, then rinse. Cut lengthwise into fine strips, then crosswise into fine dice.
+                    6.  Put the tomatoes, chillies, spring onions, finely chopped parsley, beef mince, spices, 1 tsp salt and ½ tsp freshly ground black pepper into a bowl and mix well.
+                    7.  Take the dough and knead it briefly, then divide into four pieces and shape each into a ball. Roll each ball into a thin circle, place on the prepared baking trays. Spread with a thin layer of the meat mixture.
+                    8.  Bake each flatbread for 10-15 mins until the edges begin to darken. After removing from the oven, sprinkle the lahmacun with the roughly chopped parsley and sliced onion, then squeeze over a few drops of lemon juice. Serve straightaway.
+
+                    Enjoy your delicious lahmacun.
+
+                    
+                    ">
+                        <h1>Lahmacun</h1>
+                        <img src="img/Lahmacun Recipe (Turkish Pizza) - Give Recipe.jpg" alt="Lahmacum picture">
+                    </li>
+                    <li id="Pide" class="link" data-img="img/Pide selber backen - so geht das türkische Fladenbrot.png" data-info="
+                    Pide is a turkish breas which is also similiar to pizza but it has a thicker and softer crust.
+                    It is a popular street food in Turkey and can be found in bakeries, restaurants and many more places. 
+
+                    This is the recipe for  a spinach pide.
+
+                    Ingredients:
+
+                    For the dough:
+                    -   2 cups lukewarm water
+                    -   25 gr. fresh yeast or 1 tbsp active dry yeast (use dry yeast according to packet details)
+                    -   1 tbsp sugar
+                    -   about 5 to 5+1/2 cups bread or all-purpose flour
+                    -   2 tsp salt
+
+                    For the toppings:
+                    -   1 small onion
+                    -   two handfuls of fresh washed and pat dried spinach
+                    -   1/2 tsp salt and ground black pepper
+
+                    Instructions:
+                    1.  In a mixing bowl add lukewarm water, yeast, sugar. Disolve the yeast or use according to package. Add most of the flour amount along with salt and knead adding more flour if needed until it is smooth and elastic.
+                    2.  Cover and let it rise until almost doubled in size
+                    3.  Proccess onion with washed and dry spinach leaves, salt and pepper pulsing until everything is chopped (don’t make it very small) While fill it you can alternately add crumbled Turkish white cheese (or feta) or kashar, mozarella cheese
+                    4.  Heat the oven to highest setting (about 230 to 250C). Cut the risen dough into 12 pieces and shape them round. Cover the ones you don’t use with a damp clean kitchen towel or freezer bag so they don’t get dry.
+                    5.  Roll out one piece in a lightly floured surface into a oblong shape that can fit to your baking try. Place then to the try that is lined with baking paper. Add generaously from the minced meat filling (about two full tbsp) on top leaving 1cm space in sides. Spread evenly with back of a spoon or your hand.
+                    6.  Fold the sides of the pides inside and press them well
+                    7.  Pinch the ends and seal. Hold from the corners and strech a bit more as far as it can fit to your tray and place it back. Brush the sides with egg yolk and bake until sides and bottom has nice golden color.
+
+                    Enjoy your delicious spinach pide.
+                    ">
+                        <h1>Pide</h1>
+                        <img src="img/Pide selber backen - so geht das türkische Fladenbrot.png" alt="Pide picture">
+                    </li>
+                    <li id="Ayran" class="link" data-img="img/Ayran Turkish Yogurt Drink - Give Recipe - Give Recipe.jpg" data-info="
+                    
+                    Ayran is a traditional Turkish yogurt drink that has been popular in Turkey for Centuries. 
+                    It is often served with meals or a as a cold drink during hot days.
+
+                    Ingredients:
+                    -   400g natural yoghurt
+                    -   2 cups cold water still or soda
+                    -   1 pinch salt
+
+                    Optional Ingredients:
+                    -   handful ice cubes
+                    -   mint finely chopped
+                    -   cucumber finely ficed
+                    -   pinch black pepper
+
+                    Instructions:
+                    1.  Place natural yoghurt, cold water and sea salt in a blender along with any of your chosen optional ingredients: ice cubes, mint, cucumber and black pepper.
+                    2.  Mix until ingredients are combined and drink is frothy. This should be around 10-20 seconds. Serve chilled.
+                    ">
+                        <h1>Ayran</h1>
+                        <img src="img/Ayran Turkish Yogurt Drink - Give Recipe - Give Recipe.jpg" alt="Ayran picture">
+                    </li>
+                    <li id="Türk Kahvesi" class="link" data-img="img/Turkey.jpg" data-info="
+                    
+                    Turkish coffee is a traditional coffee in turkey which is made by grinding coffee beans into a fine powder which is then brewed in a special pot called a 'cezve'
+                    It is usually served with a glass of water which should help to cleanse the palate. 
+                    Turkish coffe ispart of the UNESCO Representative List of the Intagible Cultural Heritage of Humanity.
+
+                    Ingredients:
+                    -   5 to 6 ounces cold water
+                    -   2 tablespoons extra finely-ground coffee 
+                    -   1 to 3 teaspoons sugar
+                    
+                    Instructions:
+                    1.  Pour water into the cezve and add the coffee and sugar. Mix them well and dissolve the coffee and sugar.
+                    2.  Place the cezve on the stovetop over medium heat.
+                    3.  Just before it begins to boil, remove the cezve from the heat. Skim off the foam, adding a little to each serving cup. Return the cezve to the heat and let it slowly foam up again.
+                    4.   Put the coffee slowing into serving cups 
+
+                    Enjoy your delicious turkish coffee.
+                    ">
+                        <h1>Türk Kahvesi</h1>
+                        <img src="img/Turkey.jpg" alt="Turkish coffee picture">
+                </ul>
+            </div>
+            <div id="popup1" class="popup">
+                <span class="close">&times;</span>
+                <h1 id="popup-food"></h1>
+                <div class="line"></div>
+                <img id="popup-image" src="" alt="">
+                <p id="popup-info"></p>
+            </div>
+        
+        <script>
+            // Get the popup element
+            const popup = document.getElementById("popup1");
+
+            // Get the <span> element that closes the popup
+            const closeBtn = document.querySelector(".close");
+
+            // Get all the food items and add a click event listener to each
+            const foods = document.querySelectorAll(".popup-div li");
+            foods.forEach((food) => {
+            food.addEventListener("click", () => {
+                // Get the food name and display it in the popup
+                const foodName = food.innerText;
+                const popupFood = document.getElementById("popup-food");
+                popupFood.innerText = foodName;
+
+                const imgPath = food.getAttribute("data-img");
+                const popupImg = document.getElementById("popup-image");
+                popupImg.src = imgPath;
+                
+                const foodInfo = food.getAttribute("data-info");
+                const popupInfo = document.getElementById("popup-info");
+                popupInfo.innerText = foodInfo;
+
+                // Display the popup
+                popup.style.display = "block";
+            });
+            });
+
+            // When the user clicks on the <span> (x), close the popup
+            closeBtn.addEventListener("click", () => {
+
+                const popupImg = document.getElementById("popup-image");
+                popupImg.src = "";
+                const popupInfo = document.getElementById("popup-info");
+                popupInfo.innerText = "";
+                popup.style.display = "none";
+            });
+        </script>
+
+         </section>
+
+        <!-- Footer 
+        This section is about the footer in which a feedback form is provided and social media links.
+        -->
+
+        <footer>
+            <div class="container">
+                <h2>Feedback</h2>
+                <p>Feel free to reach out if you have any Feedback or questions about the website.</p>
+                <form id="feedback-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Feedback</button>
+                  </form>
+                <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2023 Emre Cinar</p>
+              </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Culture</title>
+        <!-- === CSS ===-->
+        <link rel="stylesheet" href="history.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <nav id="nav-sliding"class="nav-sliding">
+            <div class="logo">
+                 <a href="../index.html"><img src="../cooking.png" alt="Logo"></a>
+             </div>  
+             <ul class="nav-sliding-links">
+                <li><a class="sliding-links" href="../Breakfast/index.html">Breakfast</a></li>
+                 <li><a class="sliding-links" href="../Lunch/index.html">Lunch</a></li>
+                 <li><a class="sliding-links" href="../Dinner/index.html">Dinner</a></li>
+                 <li><a class="sliding-links" href="../History/index.html">About Turkey</a></li>
+                 <li><a class="sliding-links" href="../TryTurkishFood.html">TryTurkishFood</a></li>
+                 <li><div  id="searchlogo"class="search-logo"><i class="fa fa-search"></i></div>
+                     <div id="searchbox" class="search-box"><input type="text" placeholder="Search..."></li>
+            </ul>
+            <div id="menu-button"class="menu-button">
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+            </div>
+            <script>
+                const menuBTN = document.querySelector('.menu-button');
+                const navbarlinks = document.querySelector('.nav-sliding-links');
+
+                menuBTN.addEventListener('click',()=>{
+                    navbarlinks.classList.toggle('mobile-menu');
+                })
+                const searchlogo = document.getElementById("searchlogo");
+                const searchbox = document.createElement("div");
+
+                searchlogo.addEventListener("click", function() {
+                searchbox.innerHTML = document.getElementById("searchbox").innerHTML;
+                searchbox.classList.add("search-boxA");
+                searchbox.id = "searchbox";
+
+                searchbox.classList.add(".search-boxA");
+
+                searchlogo.replaceWith(searchbox);
+                });
+            </script>
+         </nav>
+         <section class="">
+            <div class="introduction">
+                <img src="img/download (2).jpg" alt="Turkish Flag">
+                <h2>A Journey Through the culture of Turkey</h2>
+                <div class="line"></div>
+                <p>Turkey is country with long history and empires dating back 4000 years ago. The course of time and events introduced Turkey to a wide range of people and cultures.
+                    Therefore the country has a rich culture of unique traditions and customs. It is located in both Europe and Asia which enforeces the rich culture even more.
+                </p>
+            </div>
+
+            <div class="history">
+                <img src="img/Conquest of Smyrna During the Turkish War of Independence.jpg" alt="Turkish war of Independence">
+                <h3>History</h3>
+                <div class="line"></div>
+                <p>Turkey has a long history of predecessors Islamic Empires in middle east such 
+                    as the Byzantian empire, the Seljuk empire and lastly the Ottoman Empire. 
+                    After World war I the Ottoman empire collapsed, and large parts of Turkey 
+                    today were occupied by the Allied forces and some other countries. Then 
+                    Mustafa Kemal Pasha, a high respected and high ranking general, started the 
+                    Turkish nationalist resistance against the Ottoman government and the Allied 
+                    powers. This led to the Turkish War of Independence. Mustafa Kemal Pasha won the war and 
+                    established the Republic of Turkey. Mustafa Kemal Pasha became the founding father of the Republic 
+                    of Turkey and after the surname revolution, one of Ataturk’s revolutions, he took the surname Ataturk, 
+                    which means “Father of the Turks”. Ataturk revolutionized Turkey and established modern standards 
+                    in Turkey. Turkey is still the only Islamic country in which state and religion are separated. The country 
+                    of the Republic of Turkey basically serves as a bridge between Asia and Europe that is why it is 
+                    influenced by both cultures.</p>
+            </div>
+         </section>
+         <section class="Culture">
+            <div class="people">
+                <div class="row">
+                    <div class="col-content">
+                    <h1> People in Turkey</h1>
+                    <div class="line"></div>
+                    <p> Turkey's population is very diverse with various ethnic, cultural and religious backgrounds.
+                        Turks are the largest ethnic group in turkey and they are known for their hospitality and their respect for their elders.
+                        The country is predominatly a muslim country. Family is very important in turkish culture and respect for elder is essential. Hospitality is also an essential part of turkish culture and therefore it is normal to offer guests food or drinks.
+                        Turkish people are also known for their love for cats and dogs. Many locals in big cities look after stray cats and dogs. This love is reflected in Turkey's history in the Ottoman Empire, which was known for loving animals.
+                    </p>
+                    </div>
+                    <div class="col-image">
+                        <div class="image-gallery">
+                           <img src="img/download (1).jpg" alt="Turkish Hospitality">
+                           <img src="img/It is traditional Turkish hospitality to serve our guest with a smile_.jpg" alt="Turkish hospitality">
+                           <img src="img/Sultanahmet Camii (Sultan Ahmed Mosque - Blue Mosque) Istanbul.jpg" alt="Mosque in Turkey">
+                           <img src="img/İstanbul is love.jpg" alt="Istanbul cat picture"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Music">
+                <img src="img/IMG_5290.jpg" alt="Man playing Saz">
+                <h1> Music in Turkey</h1>
+                <div class="line"></div>
+                <p> 
+                    Traditional Turkish music main essential parts are its intricate rhythms and scales that reflect the country's diverese cultural influences.
+                    The most famous  traditional instrument used in turkish traditional music is the saz which is showed on the picture above.
+                    Turkish music is part of the UNESCO world cultural heritage and efforts are being made to preserve and promote turkish music.
+                    This example is a folk song  that was sang back in the day in the Ege area.
+                
+                </p>
+                <div class="audio-container">
+                    <p>Tolga Candar - Deniz Üstü Köprürür</p>
+                    <audio id="my-audio" src="Y2Mate.is - Tolga Çandar - Deniz Üstü Köpürür [ Muğla Türküleri 2002 © Kalan Müzik ]-fDJ67D_oSUM-160k-1656107756473.mp3"></audio>
+                    <button class="audio-button" onclick="playAudio()">Play</button>
+                    <button class="audio-button" onclick="stopAudio()">Stop</button>
+                </div>
+                  
+                <script>
+                var audio = document.getElementById("my-audio");
+                
+                function playAudio() {
+                    audio.play();
+                }
+                
+                function stopAudio() {
+                    audio.pause();
+                    audio.currentTime = 0;
+                }
+                </script>
+            </div>
+         </section>
+
+         </section>
+         
+        <!-- Footer 
+        This section is about the footer in which a feedback form is provided and social media links.
+        -->
+
+        <footer>
+            <div class="container">
+                <h2>Feedback</h2>
+                <p>Feel free to reach out if you have any Feedback or questions about the website.</p>
+                <form id="feedback-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Feedback</button>
+                  </form>
+                <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2023 Emre Cinar</p>
+              </div>
+        </footer>
+    </body>
+</html>

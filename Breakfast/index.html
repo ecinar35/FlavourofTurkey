@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakfast</title>
+        <!-- === CSS ===-->
+        <link rel="stylesheet" href="breakfast.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="nav-sliding"class="nav-sliding">
+            <div class="logo">
+                 <a href="../index.html"><img src="../cooking.png" alt="Logo"></a>
+             </div>  
+             <ul class="nav-sliding-links">
+                <li><a class="sliding-links" href="../Breakfast/index.html">Breakfast</a></li>
+                <li><a class="sliding-links" href="../Lunch/index.html">Lunch</a></li>
+                <li><a class="sliding-links" href="../Dinner/index.html">Dinner</a></li>
+                <li><a class="sliding-links" href="../History/index.html">About Turkey</a></li>
+                <li><a class="sliding-links" href="../TryTurkishFood.html">TryTurkishFood</a></li>
+                 <li><div  id="searchlogo"class="search-logo"><i class="fa fa-search"></i></div>
+                     <div id="searchbox" class="search-box"><input type="text" placeholder="Search..."></li>
+            </ul>
+            <div id="menu-button"class="menu-button">
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+                <div class="menu-buttonline"></div>
+            </div>
+            <script>
+                const menuBTN = document.querySelector('.menu-button');
+                const navbarlinks = document.querySelector('.nav-sliding-links');
+
+                menuBTN.addEventListener('click',()=>{
+                    navbarlinks.classList.toggle('mobile-menu');
+                })
+                const searchlogo = document.getElementById("searchlogo");
+                const searchbox = document.createElement("div");
+
+                searchlogo.addEventListener("click", function() {
+                searchbox.innerHTML = document.getElementById("searchbox").innerHTML;
+                searchbox.classList.add("search-boxA");
+                searchbox.id = "searchbox";
+
+                searchbox.classList.add(".search-boxA");
+
+                searchlogo.replaceWith(searchbox);
+                });
+            </script>
+         </nav>
+         <section class="breakfast-header">
+            <div class="breakfast-image">
+                <img src="../img/Traditional Turkish Breakfast Foods.jpg" alt="Turkish breakfast">
+            </div>
+            <div class="titel">
+                <h1>Turkish Breakfast</h1>
+                <div class="line"></div>
+                <h2>Most important meal of the day</h2>
+                <p>Have you ever had Turkish breakfast? It is by far the most enticing breakfast on the planet! A traditional Turkish breakfast is filled with a wide selection of delectable delicacies. You eat with your eyes first and feel like you're in heaven!
+
+                    Turkish breakfast flat-lay featuring egg dishes in copper pans, pastries such as borek and simit, jams, olives, cheese, veggies, and Turkish tea in traditional tulip glasses. 
+                    Today we'll look at some of the most well-known Turkish breakfast recipes. In Turkey, all morning meals are traditionally offered together. The more food there is, the better. The table should appear to be FULL. You have the impression that there is no limit. </p>
+            </div>
+         </section>
+
+         <section class="meals">
+            <div class="meals-options">
+                <h2>Structure of Turkish breakfast</h2>
+                <p>Turkish breakfast or kahvalti in turkish is a essential part of turkish culture. Turkish families will often get together at one table on weekends to have breakfast.
+                    The concept of sharing a meal is one of the main cultural aspects of turkish culture. Turkish culture emphasizes the importance of hospitality and generosity.
+
+                    It also reprsents the diverse culinary traditions of turkey as different regions have their own specialties because of their diverse background and history.
+                </p>
+                <h1>Dishes and drinks at Turkish breakfast</h2>
+            </div>
+            <div class="popup-div">
+                <ul>
+                    <li id="simit" class="link" data-img="img/Ekşi Mayalı Simit.jpg"
+                    data-info=" 
+                    Simit is circular bread in turkey which is often compared to a bagel or pretzel. It is popular in Turkey for centuries and is often eaten for breakfast or just a snack during the day.
+                    Simit is typically sold by street vendors and bakeries. It is uslaly eaten plain or served with a variety of spreads.
+                    
+                    
+                    Ingredients:
+
+                    -   2 teaspoons instant yeast 4 cups all-purpose flour
+                    -   2 teaspoon salt
+                    -   1.5 cup hot water
+                    -   2 tablespoons molasses
+                    -   1 tablespoon grape or pomegranate molasses (optional)
+                    -   1 tbsp sesame seeds
+                    
+                    Instructions:
+                    
+                    1. Whisk together the flour, yeast, and salt in a large mixing basin.
+                    
+                    2. In a separate bowl, combine the heated water, molasses, and (if using) grape/pomegranate molasses.
+                    
+                    3. Mix the wet and dry ingredients together with a wooden spoon until the dough comes together. Knead the dough for 10 minutes, or until smooth and elastic.
+                    
+                    4. Cover the dough in a lightly greased basin with a towel. Allow it to rise for about an hour in a warm environment, or until it has doubled in size.
+                    Preheat the oven to 425 degrees Fahrenheit (220 degrees Celsius). Using parchment paper, line a baking sheet.
+
+                    5. Divide the dough into 10-12 equal pieces and roll each one into a 12-inch (30-cm) long rope. Make a circle with the rope, then twist the ends around each other and tuck the ends underneath the circle to secure them.
+
+                    6. Each simit is dipped in a bowl of water, then rolled in sesame seeds until completely covered.
+
+                    7. Repeat with the remaining dough and place the simit on the prepared baking sheet.
+
+                    8. Bake for 15-20 minutes, or until the simit are golden brown.
+
+                    9. Remove the simit from the oven and cool for a few minutes on a wire rack before serving.
+                    
+                    10. Simit is best served warm and fresh, but it can also be stored at room temperature in an airtight container for up to 2-3 days.
+
+                    Enjoy your tasty handmade simit!">
+
+                        <h1>Simit</h1>
+                        <img src="img/Ekşi Mayalı Simit.jpg" alt="Turkish breakfast">
+                    </li>
+                    <li id="Menemen" class="link" data-img="img/Menemen Recipe (Turkish Tomato Scrambled Eggs) - Give Recipe.png" data-info="
+                    
+                    Menemen is a popular breakfast dish in turkey. It consists of eggs scrambled with tomatoes peppers and onions. Menemen is usually served turkish bread or simit.
+                    This dish is believed to have it's origin in the Ottoman Empire and therefore it is part of turkish culture for over many centuries.
+
+                    Ingredients:
+
+                    -   2 tablespoons olive olive
+                    -   1 finely chopped onions
+                    -   2 diced bell peppers
+                    -   5 peeled and chopped tomatoes
+                    -   5 eggs
+                    -   salt and pepper
+                    -   turkish bread or simit for the serving
+
+                    Instructions:
+
+                    1. Heat the olive oil in a pan over medium heat and add the onion and bell peppers after it reached medium temperature. Cook them until their are soft.
+                    2. Add tomatoes as well and stir well
+                    3. Reduce the heat and let it simmer about 10-15 minutes till the tomatoes have cooked and the  mixture is thicker.
+                    3. Crack the eggs in,add them into the pot and stir it. 
+                    4. Season with salt and pepper and cook until the eggs are at your desired texture.
+
+                    Enjoy your delicious menemen. 
+
+                    ">
+                        <h1>Menemen</h1>
+                        <img src="img/Menemen Recipe (Turkish Tomato Scrambled Eggs) - Give Recipe.png" alt="Menemen picture">
+                    </li>
+                    <li id="Sucuklu Yumurta" class="link" data-img="img/Sucuklu Yumurta.jpg" data-info="
+                    
+                    Sucuklu  yumurta is one of the most popular breakfast dishes in Turkey. It is basically eggs with a spicy  garlic turkish sausage made from beef. 
+                    It is often enjoyed with a glass of turkish cay (tea). The dish has gained popularity in other countries as well.
+
+                    Ingredients:
+                    -   sliced sucuk (turkish sausage)
+                    -   2-3 eggs 
+                    -   1 tablespoon of butter  
+                    - salt or pepper 
+
+                    Instructions:
+                    1.  Heat a pan to medium level and add  the butter to it
+                    2. After the butter melts add the sliced sucuk and cook it
+                    3. When the sucuk is almost cooked add the eggs into it as well and cook it together till the eggs are done as well.
+                    
+                    Enjoy your tasty sucuklu yumurta!
+
+                    ">
+                        <h1>Sucuklu Yumurta</h1>
+                        <img src="img/Sucuklu Yumurta.jpg" alt="Sucuklu Yumurta picture">
+                    </li>
+                    <li id="Börek" class="link" data-img="img/Börek mit Spinat und Feta (Veganes Rezept) - Bianca Zapatka _ Rezepte.jpg" data-info="
+                    
+                    Börek is a traditional pastry made with thin layers of dough and filled with various ingredients such as cheese, meat or vegetables.
+                    It can be found in many different versions which are also influenced by the different regions in Turkey. The origin of börek is in the Ottoman Empire, where it was a popular dish among wealthy people.
+                    It can be enjoyed hot or cold.
+                    
+                    Ingredients for börek with spinach and feta:
+
+                    -   1 package of phyllo dough
+                    -   1/2 pound chopped spinach
+                    -   1/2 cup of crumbled feta cheese
+                    -   1/4 grated Parmesan cheese
+                    -   1/4 cup chopped parsley
+                    -   1/4 cup of chopped dill
+                    -   1/4 cup of chopped scallions
+                    -   1/4 cup of olive olive
+                    -   salt and pepper 
+                    -   1/2 cup of melted better 
+
+                    Instructions:
+
+                    1.  Preheat the oven to 375°
+                    2.  Mix together the spinach, feta cheese, parmesan cheese, parsley, dill, scallions, olive oil, salt and pepper until its well combined
+                    3.  Unroll the dough and cover it with cloth to prevent it from drying.
+                    4.  Take one of the phyllo doughs and brush it with melted butter  and spoon the spinach feta mixture over it while leaving a  1-inch border around the edge. Repeat that cyle with the other doughs.
+                    5.  Roll the dough into a tight cylinder and then coil it into a spiral shape, tucking the end underneath.
+                    6.  Bake the börek for 25-30 min  until its golden brown and crispy. 
+                    7.  Serve hot or cold. 
+
+                    Enjoy your tasty börek. 
+
+                    ">
+                        <h1>Börek</h1>
+                        <img src="img/Börek mit Spinat und Feta (Veganes Rezept) - Bianca Zapatka _ Rezepte.jpg" alt="Börek picture">
+                    </li>
+                    <li id="Gözleme" class="link" data-img="img/Turkish Gozleme with Lamb.png" data-info="
+                    
+                    Gözleme is a traditional turkish dish made from handrolled dough which is filled with different igredients and cooked on a griddle.
+                    The most common fillings are spinach and feta cheese. It is a popular street food and can be found in markets and food stalls in turkey.
+
+                    Ingredients: 
+                    -   2 cups of flour
+                    -    1/2 tsp salt
+                    -   3/4 cup water 
+                    -   1 tbsp olive olive
+                    -   1 cup of chopped spinach
+                    -   1/2 cup of crumbled feta cheese
+                    -   1/4 cup of chopped fresh parsley
+                    -   1/4 cup of chopped scallions
+                    -   salt and pepper 
+                    -   olive oil or butter for cooking
+
+                    Instructions:
+                    1.  Mix together flour and salt and gradually add water and olive while stirring until until the dough comes together as a ball.
+                    2.  Knead the dough for 5-10 minutes until its smooth and elastic
+                    3.  Divide it into four equal pieces and roll each  piece out into a thin round sheet.
+                    4.  In another bowl mix together spinach, feta cheese, parsley, scallions, salt and pepper.
+                    5.  Spread 1/4 of the spinach and feta mixture onto one half of each dough sheet while leaving a 1 inch border around the edges
+                    6.  Fold the other half of the dough over the filling to create a half-moon shape. Pinch the edges together to seal.
+                    7.  Heat a large griddle over medium-high heat and brush the cooking surface with oil or butter.
+                    8.  Cook the gözleme for 3-5 minutes until its brown and crispy.
+                    9.  Repeat that for the rest and cut the gözlemes into wedges and serve them.
+
+                    Enjoy your delicious gözleme. 
+                    ">
+                        <h1>Gözleme</h1>
+                        <img src="img/Turkish Gozleme with Lamb.png" alt="Gözleme picture">
+                    </li>
+                    <li id="Cay" class="link" data-img="img/The Tea of Turkey.png" data-info="
+                    
+                    Tea is a essential part of Turkish culture and its drank everywhere throughout the day on all kinds of occasions.
+                    It is typically made from black tea leaves which are grown in the Rize province of Turkey.
+                    It is a important part of turkish hospitality and offered as a sign of respect and friendship.
+
+                    Turkish tea is usually served with one or two cubes of sugar and a small snack.
+
+                    Ingredients:
+                    -   Water
+                    -   Black tea leaves(preferably turkish tea leaves)
+                    -   Sugar(optional)
+
+                    Equipment:
+                    -   Çaydanlık (double teapot)
+
+                    Instructions:
+                    1.  Fill the lower part of the caydanlik with water and heat it on the stove
+                    2.  Once the water comes to a boil, add the tea leaves to the upper part of the caydanlik and place the upper part on top of the lower part which is on the stove.
+                    3.  Reduce the heat to low and let the tea cook for 10-15 minutes until the tea is dark.
+                    4. Remove the upper part from the stove and pour a small amount of brewed tea into one glass and dilute the tea with hot water from the lower pot.
+                    5. Serve the tea hot with some snacks.
+
+                    Enjoy your delicious turkish tea.
+                    ">
+                        <h1>Cay</h1>
+                        <img src="img/The Tea of Turkey.png" alt="Turkish tea cay picture">
+                </ul>
+            </div>
+            <div id="popup1" class="popup">
+                <span class="close">&times;</span>
+                <h1 id="popup-food"></h1>
+                <div class="line"></div>
+                <img id="popup-image" src="" alt="">
+                <p id="popup-info"></p>
+            </div>
+        
+        <script>
+            // Get the popup element
+            const popup = document.getElementById("popup1");
+
+            // Get the <span> element that closes the popup
+            const closeBtn = document.querySelector(".close");
+
+            // Get all the food items and add a click event listener to each
+            const foods = document.querySelectorAll(".popup-div li");
+            foods.forEach((food) => {
+            food.addEventListener("click", () => {
+                // Get the food name and display it in the popup
+                const foodName = food.innerText;
+                const popupFood = document.getElementById("popup-food");
+                popupFood.innerText = foodName;
+
+                const imgPath = food.getAttribute("data-img");
+                const popupImg = document.getElementById("popup-image");
+                popupImg.src = imgPath;
+                
+                const foodInfo = food.getAttribute("data-info");
+                const popupInfo = document.getElementById("popup-info");
+                popupInfo.innerText = foodInfo;
+
+                // Display the popup
+                popup.style.display = "block";
+            });
+            });
+
+            // When the user clicks on the <span> (x), close the popup
+            closeBtn.addEventListener("click", () => {
+
+                const popupImg = document.getElementById("popup-image");
+                popupImg.src = "";
+                const popupInfo = document.getElementById("popup-info");
+                popupInfo.innerText = "";
+                popup.style.display = "none";
+            });
+        </script>
+
+         </section>
+
+        <!-- Footer 
+        This section is about the footer in which a feedback form is provided and social media links.
+        -->
+
+        <footer>
+            <div class="container">
+                <h2>Feedback</h2>
+                <p>Feel free to reach out if you have any Feedback or questions about the website.</p>
+                <form id="feedback-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Feedback</button>
+                  </form>
+                <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2023 Emre Cinar</p>
+              </div>
+        </footer>
+    </body>
+</html>

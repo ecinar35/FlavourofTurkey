@@ -1,0 +1,369 @@
+/* CSS for whole Document*/
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Lato,sans-serif!important;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+/* CSS for Header, normal Navbar and sliding Navbar */
+
+.nav-sliding{
+    background-color: rgba(200, 16, 46, 1);
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    width:100%;
+    transition: all 0.5s ease;
+  }   
+  
+  .nav-sliding-links{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-sliding-links li{
+    margin: 0 20px;
+  }
+  
+  .sliding-links {
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 8px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-size: 2vmin;
+    font-family: sans-serif;
+    line-height: 1,5;
+  }
+  
+  .nav-sliding a:hover {
+    background-color: gray;
+  }
+  .logo img {
+    height: 50px;
+  }
+
+  .search-box{
+    margin-right: 5px;
+    display: none;
+    transition: all 0,5 ease;
+    transform: translateY(-50%);
+  }
+  
+  .search-boxA{
+    transition: all 0,5 ease;
+    transform: translateY(-50%);
+    margin-right: 5px;
+  }
+  
+  .search-logo{
+    margin-right: 5px;
+  }
+  .search-logo i{
+    height: 15px;
+    font-size: 2em;
+    margin-right: 5px;;
+    cursor: pointer;
+  }
+
+/* Introduction  Section */
+  .breakfast-header{
+    padding-top:103.2px ;
+    display:block;
+  }
+
+  .breakfast-image{
+    margin-top: 50px;
+    align-items: center;
+    height: 300px;
+    text-align: center
+  }
+  .breakfast-image img {
+    height: 500px;
+    max-width: 100%;
+    border-radius: 50%;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border: 3px solid #ddd;
+  }
+
+  .titel {
+    margin-top: 250px;
+    text-align: center;
+  }
+
+  .titel h1 {
+    color: rgba(200, 16, 46, 1);
+    font-size: 4vmin;
+  }
+
+  .titel h2 {
+    color: black; 
+    font-weight: bold;
+  }
+
+  .titel p {
+    color: black;
+  }
+
+/* Meal options Turkish breakfast*/
+
+.meals-options {
+  text-align: center;
+  align-items: center;
+}
+
+.popup-div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.popup-div ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.popup-div ul li:hover{
+  background-color: grey;
+}
+
+.popup-div ul li img {
+  height: 200px;
+  border-radius: 70%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border: 3px solid #ddd;
+
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background: black;
+  margin: 10px auto;
+  border-radius: 5px;
+  align-self:center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+}
+.popup h1 {
+  font-size: 4vmin;
+}
+
+.popup img {
+  height: 500px;
+  max-width: 100%;
+  border-radius: 50%;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border: 3px solid #ddd;
+}
+
+.close {
+  color: rgba(200, 16, 46, 1);
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS for footer */
+
+/* CSS for footer */
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 5px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #999;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #f00;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #d00;
+  }
+  .copyright{
+    text-align: center;
+    color:#999;
+  }
+
+  /* Mobile Elements
+This part is about elements which are only visible if the user is using a screen with less than 850px 
+*/
+
+.menu-button{
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: none;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .menu-buttonline{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  /* Mobile CSS
+This is the CSS for parts that have to be changed when using a smaller screen or elements that only appear when u use a device with a smaller screen.
+*/
+
+@media only screen and (max-width:850px){
+  
+    /* Responsive Header and navbar  */
+    
+    .nav-sliding{
+      padding: 0;
+      background-color: rgba(200, 16, 46, 1);
+      color: rgba(200, 16, 46, 1);
+      height:104px;
+    }
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  
+    .nav-sliding-links{
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      background-color: black;
+      margin:0;
+      margin-top: -900px;
+      transition: all 0.5s ease;
+    }
+    
+    .sliding-links{
+        background-color: rgba(200, 16, 46, 1);
+        color: whitesmoke;
+    }
+
+    .mobile-menu{
+      margin-top: 0px;
+      border-bottom-right-radius: 30%;
+    }
+  
+    .menu-button{
+    display: block;
+    }
+    .search-box {
+      display: none;
+    }
+
+    #searchbox , #searchlogo{
+        display: none;
+    }
+
+    .nav-sliding-links li {
+      margin: 30px auto;
+    }
+}
+
+/* Animations */
+
+img {
+    transition: transform 0.3 ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  a:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+  }
