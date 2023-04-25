@@ -79,17 +79,20 @@
 
                 /* Turkish food scraper 
                 It doesnt work because of the CORS policy */
-                const url = "https://en.wikipedia.org/wiki/${input}";
-                fetch(url)
+                const urlwikepedia = "https://en.wikipedia.org/wiki/${input}";
+                fetch(urlwikepedia)
                 .then(response => response.text())
                 .then(html => {
-				const title = html.querySelector(".latitude .longitude").textContent;
+				const latitude = html.querySelector(".latitude").textContent;
+                const longitude = html.querySelector(".longitude").textContent;
 				console.log(title);
                 })
                 .catch(error => console.error(error));
 
-                /* Map JS Code */
-                var map = L.map('map').setView([51.505, -0.09], 13);
+            /* This is the approach I wanted to use for providing the service, but it didnt work because of the No-Access-Allow-Origin-Allow Error.
+                This Location would have been used to scrape turkish restaurant to scrape from Tripadvisor.
+                
+                var map = L.map('map').setView([latitude,longitude], 13);
                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -98,6 +101,33 @@
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 }).addTo(map);
+
+                Scrape the turkish restaurants from trip advisor
+                
+                const urltrip =""
+            */
+
+                /* Map JS Code to demonstrate
+                Code is by Leaflet js but modified */
+                var map = L.map('map').setView([55.9533, -3.1883], 13);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+                /* Turkish restaurants in Edinburgh */
+                var pera = L.marker([55.9603463635733, -3.1817126312021453]).addTo(map);
+                pera.bindPopup("Pera - Turkish Mangal & Meze bar").openPopup();
+
+                var kezban = L.marker([55.97654855647246, -3.171222155821324]).addTo(map);
+                kezban.bindPopup("Kezban Mediterranean Restaurant");
+
+                var rodi = L.marker([55.94604237320278, -3.211081444178674]).addTo(map);
+                rodi.bindPopup("Rodi");
             </script>
          </section>
 
