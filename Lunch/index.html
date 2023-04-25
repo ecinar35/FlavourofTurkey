@@ -254,17 +254,11 @@
             </div>
         
         <script>
-            // Get the popup element
             const popup = document.getElementById("popup1");
-
-            // Get the <span> element that closes the popup
             const closeBtn = document.querySelector(".close");
-
-            // Get all the food items and add a click event listener to each
             const foods = document.querySelectorAll(".popup-div li");
             foods.forEach((food) => {
             food.addEventListener("click", () => {
-                // Get the food name and display it in the popup
                 const foodName = food.innerText;
                 const popupFood = document.getElementById("popup-food");
                 popupFood.innerText = foodName;
@@ -277,12 +271,10 @@
                 const popupInfo = document.getElementById("popup-info");
                 popupInfo.innerText = foodInfo;
 
-                // Display the popup
                 popup.style.display = "block";
             });
             });
 
-            // When the user clicks on the <span> (x), close the popup
             closeBtn.addEventListener("click", () => {
 
                 const popupImg = document.getElementById("popup-image");
